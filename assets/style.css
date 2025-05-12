@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif, "Young Serif", serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--stone-100);
+    line-height: 1.5;
+}
+
+.card {
+    max-width: 736px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 16px;
+    padding: 32px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    width: 100%;
+    height: auto; /* Mantém a proporção */
+    display: block;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.card h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-size: 40px;
+    padding: 5px;
+    color: var(--stone-900);
+}
+
+.card p {
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    color: var(--stone-600);
+}
+
+.preparation {
+    width: 100%;
+    background: var(--rose-800-transparent);
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+.preparation ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.preparation li {
+    color: var(--stone-600);
+    margin: 10px;
+    font-size: 16px;
+}
+
+.preparation li::marker {
+    list-style-type: disc;
+    color: var(--rose-800);   
+    font-size: 12px;
+}
+
+
+h3 {
+    color: var(--rose-800);
+    font-weight: 600;
+    padding: 4px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.ingredients {
+    margin: 20px 0 30px 0;
+}
+
+.ingredients h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: var(--brown-800);
+    margin: 4px;
+    padding-top: 10px;
+}
+
+.ingredients ul {
+    margin: 0;
+    padding-left: 25px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.ingredients li {
+    color: var(--stone-600);
+    margin: 10px;
+}
+
+.ingredients li::marker {
+    list-style-type: disc;
+    color: var(--brown-800);
+    font-size: 12px;
+}
+
+hr {
+    color: var(--stone-600);
+}
+
+.instructions {
+    margin: 20px 0;
+}
+
+.instructions h2 {
+    font-size: 30px;
+    margin-bottom: 16px;
+    color: var(--brown-800);
+    font-family: 'Young Serif';
+    font-weight: 400;
+}
+
+.instructions ol {
+    padding-left: 20px;
+    counter-reset: step;
+}
+
+.instructions li {
+    margin-bottom: 16px;
+    line-height: 1.4;
+    list-style: none;
+    position: relative;
+    padding-left: 32px;
+    color: var(--stone-600);
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+}
+
+.instructions li::before {
+    counter-increment: step;
+    content: counter(step) ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--brown-800);
+    font-weight: bold;
+}
+
+
+.nutritional {
+    margin-top: 20px;
+}
+
+.nutritional h2 {
+    font-size: 30px;
+    margin-bottom: 16px;
+    color: var(--brown-800);
+    font-family: 'Young Serif';
+    font-weight: 400;
+}
+
+.nutritional table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.nutritional table td {
+    padding: 12px 0;
+    border-bottom: 1px solid;
+    color: var(--stone-600);
+    font-size: 16px;
+}
+
+.nutritional table tr:last-child td {
+    border-bottom: none;
+}
+
+.nutritional table td strong {
+    color: var(--brown-800);
+    font-weight: 700;
+}
+
+
